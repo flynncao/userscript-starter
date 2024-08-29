@@ -6,12 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["userscript", "greasemonkey", "tampermonkey"],
+  "keywords": [
+    "userscript",
+    "greasemonkey",
+    "tampermonkey"
+  ],
   "author": "Flynn Cao",
   "license": "MIT",
   "devDependencies": {
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write ."
+    ]
   }
 }

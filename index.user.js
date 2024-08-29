@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name  
-// @version 
-// @description 
+// @name
+// @version
+// @description
 // @author Flynn Cao
-// @namespace 
-// @match  
-// @include 
+// @namespace
+// @match
+// @include
 // @license MIT
 // ==/UserScript==
 
 ;(async function () {
-                     console.log('Welcome!')
+  console.log('Welcome to...!')
 })()
